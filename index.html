@@ -1,100 +1,47 @@
-<!DOCTYPE html>
+<html>
 <head>
-    <title>KatOS</title>
-    <meta name="viewport" content="width=device-width">
-    
-<style>
-img {
-    max-width: 100%;
-}
-
-
-body{
-
-     background-color: black;
-
-
-}
- .top{
-     position: relative;
-     text-align: center;
-     font-size: 50px;
-     color: blue;
- }
- .bottom{
-     position: relative;
-     text-align: center;
-     font-size: 75px;
-     bottom: -4cm;
-     color: darkblue;
- 
- 
-
- 
- 
- }
- .cent{
-    position: relative;
-     font-size: 60px;
-     top: -2cm;
-     color: white;
-
- }
-
-.li {
-    color: red;
-    top: 1cm;
-    position: fixed;
-    left: 35cm;
-    
-}
-
-
-.status{
-
-       position: relative;
-       color: red;
-       font-size: 50px;
-       bottom: 2cm;
-       text-align: center;
-       right: 5cm;
- 
-
-
-}
-
-
-
-</style>
+<title>Login Page</title>
 </head>
-
-
-
 <body>
+<form name="loginForm" method="post" action="main.html">
+<table width="20%" bgcolor="0099CC" align="center">
 
- <div class="top">
-  <h1>KatOS</h1>
-</div>
+<tr>
+<td colspan=2><center><font size=4><b>Sussyboys Login</b></font></center></td>
+</tr>
 
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
 
-<div class="cent">
-    <p>SnackGamer</p>
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
 
-</div>
- <div class="bottom">
-     <p2>He's Sus</p2>
- </div>
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
 
-<div class="li">
-    <li><a href="indexrepo.html">File Repo</a></l1>
-        <li><a href="login.html">Log in</a></li>
-</div>
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
 
-<div class="status">
-
-<p>DEV STATUS: not in development at the moment</p>
-
-
-</div>
+if(form.userid.value == "Admin" && form.pwd.value == "123")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
 
 </body>
+</html>
