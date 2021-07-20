@@ -1,8 +1,15 @@
 
+let ari
+let snack
+let kateo
+
+
+
+
 function check(form)
 {
 
-if(form.userid.value == "Admin" && form.pwd.value == "123"), if(form.userid.value == "ari" && form.pwd.value == "fattyman")
+	if(form.userid.value = "Admin" && form.pwd.value == '123')
 
 {
 	return true;
@@ -13,4 +20,8 @@ else
 	return false;
 }
 }
+
+
+
+
 
