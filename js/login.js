@@ -1,8 +1,18 @@
 
+var userid = [
+
+               
+			
+
+]
+
+
+
+
 function check(form)
 {
 
-if(form.userid.value == "Admin" && form.pwd.value == "123")
+	if(form.userid.value = "sussy" && form.pwd.value == "baka")
 
 {
 	return true;
@@ -13,4 +23,8 @@ else
 	return false;
 }
 }
+
+
+
+
 
