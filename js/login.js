@@ -12,7 +12,7 @@ var userid = [
 function check(form)
 {
 
-	if(form.userid.value = "bigblack" && form.pwd.value == "niggaballs")
+	if(form.userid.value = "sex" && form.pwd.value == "kylieissexy")
 
 {
 	return true;
